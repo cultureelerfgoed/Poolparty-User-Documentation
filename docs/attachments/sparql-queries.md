@@ -1,6 +1,6 @@
 ---
 title: SPARQL-QUERIES
-parent: attachments
+parent: Attachments
 nav_order: 1
 ---
 
