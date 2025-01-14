@@ -13,20 +13,34 @@
     
     "relUrl": "/"
   },"2": {
+    "doc": "Project Aanmaken",
+    "title": "Project aanmaken",
+    "content": "Let op, vanuit de RCE geven we geen rechten om dit zelf te doen. Dit omdat wij de omgeving dan beter kunnen beheren. Wanneer men zelf projecten aanmaakt, hebben wij het overzicht niet meer welke projecten er daadwerkelijk in gebruik zijn, en welke als probeersel zijn aangemaakt. Om een nieuw project aan te maken kun je het best contact met ons opnemen. ",
+    "url": "/Poolparty-User-Documentation/docs/project/project-aanmaken.html#project-aanmaken",
+    
+    "relUrl": "/docs/project/project-aanmaken.html#project-aanmaken"
+  },"3": {
+    "doc": "Project Aanmaken",
+    "title": "Project Aanmaken",
+    "content": " ",
+    "url": "/Poolparty-User-Documentation/docs/project/project-aanmaken.html",
+    
+    "relUrl": "/docs/project/project-aanmaken.html"
+  },"4": {
     "doc": "Project",
     "title": "Project",
     "content": " ",
     "url": "/Poolparty-User-Documentation/docs/project.html",
     
     "relUrl": "/docs/project.html"
-  },"3": {
+  },"5": {
     "doc": "SPARQL-Queries",
     "title": "SPARQL Queries voorbeelden",
     "content": "Link button . # sparql query toevoegen . ",
     "url": "/Poolparty-User-Documentation/docs/bijlagen/sparql-queries.html#sparql-queries-voorbeelden",
     
     "relUrl": "/docs/bijlagen/sparql-queries.html#sparql-queries-voorbeelden"
-  },"4": {
+  },"6": {
     "doc": "SPARQL-Queries",
     "title": "SPARQL-Queries",
     "content": " ",
