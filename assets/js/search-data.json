@@ -22,7 +22,7 @@
   },"3": {
     "doc": "SPARQL queries",
     "title": "SPARQL Queries voorbeelden",
-    "content": "Link button . [Link button](https://just-the-docs.com){: .btn } . ",
+    "content": "Link button . # sparql query toevoegen . ",
     "url": "/Poolparty-User-Documentation/docs/sparql-queries.html#sparql-queries-voorbeelden",
     
     "relUrl": "/docs/sparql-queries.html#sparql-queries-voorbeelden"
