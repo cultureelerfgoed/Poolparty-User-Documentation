@@ -2,7 +2,24 @@ title: PoolParty User Documentation By The Cultural Heritage Agency Of The Nethe
 description: A guide for users on how to start working with PoolParty and managing a Thesaurus.
 theme: just-the-docs
 
-url: https://just-the-docs.github.io
+url: https://cultureelerfgoed.github.io
 
-aux_links:
-  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+defaults:
+  - scope:
+      path: "docs" # an empty string here means all files in the project
+      type: "pages"
+    values:
+      layout: "default"
+
+exclude:
+  # from https://github.com/jekyll/jekyll/blob/master/lib/site_template/_config.yml:
+
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.txt
+  - README.md
+
+
+
+
+
