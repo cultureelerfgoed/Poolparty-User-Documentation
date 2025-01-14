@@ -1,7 +1,6 @@
 ---
 title: SPARQL queries
-parent: Attachments
-nav_order: 1
+nav_order: 3
 ---
 
 # SPARQL Queries voorbeelden
