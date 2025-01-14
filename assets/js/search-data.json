@@ -1,18 +1,25 @@
 {"0": {
+    "doc": "Bijlagen",
+    "title": "Bijlagen",
+    "content": " ",
+    "url": "/Poolparty-User-Documentation/bijlagen.html",
+    
+    "relUrl": "/bijlagen.html"
+  },"1": {
     "doc": "Home",
     "title": "Home",
     "content": "PoolParty Gebruikers Documentatie. ",
     "url": "/Poolparty-User-Documentation/",
     
     "relUrl": "/"
-  },"1": {
+  },"2": {
     "doc": "SPARQL queries",
     "title": "SPARQL Queries voorbeelden",
     "content": "Link button . [Link button](https://just-the-docs.com){: .btn } . ",
     "url": "/Poolparty-User-Documentation/docs/sparql-queries.html#sparql-queries-voorbeelden",
     
     "relUrl": "/docs/sparql-queries.html#sparql-queries-voorbeelden"
-  },"2": {
+  },"3": {
     "doc": "SPARQL queries",
     "title": "SPARQL queries",
     "content": " ",
