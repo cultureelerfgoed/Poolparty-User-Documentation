@@ -1,5 +1,5 @@
 ---
-title: SPARQL-QUERIES
+title: SPARQL queries
 parent: Attachments
 nav_order: 1
 ---
