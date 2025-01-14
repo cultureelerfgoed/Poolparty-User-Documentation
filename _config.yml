@@ -1,12 +1,12 @@
 title: PoolParty User Documentation By The Cultural Heritage Agency Of The Netherlands
 description: A guide for users on how to start working with PoolParty and managing a Thesaurus.
 theme: just-the-docs
-
+baseurl: /Poolparty-User-Documentation
 url: https://cultureelerfgoed.github.io
 
 defaults:
   - scope:
-      path: "docs" # an empty string here means all files in the project
+      path: "" # an empty string here means all files in the project
       type: "pages"
     values:
       layout: "default"
