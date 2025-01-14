@@ -13,13 +13,20 @@
     
     "relUrl": "/"
   },"2": {
+    "doc": "Project",
+    "title": "Project",
+    "content": " ",
+    "url": "/Poolparty-User-Documentation/docs/project.html",
+    
+    "relUrl": "/docs/project.html"
+  },"3": {
     "doc": "SPARQL-Queries",
     "title": "SPARQL Queries voorbeelden",
     "content": "Link button . # sparql query toevoegen . ",
     "url": "/Poolparty-User-Documentation/docs/bijlagen/sparql-queries.html#sparql-queries-voorbeelden",
     
     "relUrl": "/docs/bijlagen/sparql-queries.html#sparql-queries-voorbeelden"
-  },"3": {
+  },"4": {
     "doc": "SPARQL-Queries",
     "title": "SPARQL-Queries",
     "content": " ",
