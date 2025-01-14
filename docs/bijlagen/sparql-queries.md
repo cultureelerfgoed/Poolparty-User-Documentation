@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: home
 title: SPARQL-Queries
 parent: Bijlagen
 ---
