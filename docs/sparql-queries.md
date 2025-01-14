@@ -9,9 +9,9 @@ nav_order: 2
 
 <div class="code-example" markdown="1">
 
-[Link button](https://just-the-docs.com){: .btn }
+[Link button](https://data.cultureelerfgoed.nl/PoolParty/sparql/term/id/cht){: .btn }
 
 </div>
 ```markdown
-[Link button](https://just-the-docs.com){: .btn }
+# sparql query toevoegen
 ```
