@@ -3,6 +3,7 @@ layout: home
 title: Project Aanmaken
 parent: Gebruikershandleiding
 nav_order: 1
+has_children: true
 ---
 
 # Project aanmaken
