@@ -2,6 +2,7 @@
 layout: home
 title: Project Aanmaken
 parent: Gebruikershandleiding
+nav_order: 1
 ---
 
 # Project aanmaken
