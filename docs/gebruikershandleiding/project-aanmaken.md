@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Project Aanmaken
-parent: Project
+parent: Gebruikershandleiding
 ---
 
 # Project aanmaken

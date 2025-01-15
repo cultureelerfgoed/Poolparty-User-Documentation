@@ -1,6 +1,7 @@
 ---
 layout: home
 title: SPARQL-Queries
+nav_order: 1
 parent: Bijlagen
 ---
 
