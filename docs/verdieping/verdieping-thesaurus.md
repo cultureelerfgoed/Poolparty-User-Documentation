@@ -1,7 +1,7 @@
 ---
 layout: home
 title: Thesaurus
-parent: verdieping
+parent: Verdieping
 ---
 
 # Wat is een thesaurus?
