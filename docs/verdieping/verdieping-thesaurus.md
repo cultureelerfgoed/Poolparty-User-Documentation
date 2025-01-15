@@ -5,8 +5,11 @@ parent: Verdieping
 ---
 
 # Wat is een thesaurus?
-{: .important } 
-> draft!!
+{: .no_toc .text-delta }
+
+
+{: .important }
+> Draft!
 
 Een thesaurus is een vergelijkende woordenboek van semantisch met elkaar
 gerelateerde termen, die meestal één kennisveld bestrijken. Thesauri hebben een
