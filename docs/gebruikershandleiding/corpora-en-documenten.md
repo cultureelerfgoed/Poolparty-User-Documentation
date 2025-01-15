@@ -1,10 +1,9 @@
 ---
 layout: home
-title: Workflows
+title: Corpora en Documenten
 parent: Gebruikershandleiding
-nav_order: 3
+nav_order: 4
 has_children: true
 ---
 
-# Workflows
-
+# Corpora en Documenten

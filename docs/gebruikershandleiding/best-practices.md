@@ -2,7 +2,7 @@
 layout: home
 title: Best practices
 parent: Gebruikershandleiding
-nav_order: 4
+nav_order: 6
 ---
 
 ## Best practices

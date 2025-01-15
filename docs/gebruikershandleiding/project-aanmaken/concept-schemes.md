@@ -1,0 +1,50 @@
+---
+layout: home
+title: Concept Schemes
+parent: Project Aanmaken
+nav_order: 2
+---
+{: .no_toc .text-delta }
+# Top concepten: Concept Schemes in Poolparty taal
+
+
+Alle termen in de thesaurus zijn (via broader terms en top termen) gekoppeld aan CONCEPT SCHEMES. “A SKOS concept scheme can be viewed as an aggregation of one or more SKOS concepts": een ConceptScheme markeert de samenhang van een set concepten (thesaurustermen).
+
+In Poolparty kun je aan de linkerzijde in het scherm de thesaurustermen en Concept Schemes bekijken. Concept Schemes zijn Paars van kleur.
+
+{: .important }
+> Een Concept Scheme zegt iets over een set termen: Het Concept Scheme self is geen onderdeel van de thesaurus.
+
+## Top termen
+Onder de Concept Schemes hangen de toptermen. Alle termen in de thesaurus zijn ofwel topterm of gekoppeld aan topteremen (oa aan termen die gekoppeld zijn aan...). De Toptermen zijn donkergroen gekleurd en de termen daaronder zijn lichtgroen. Achter de term staat tussen haakjes aangegeven hoeveel termen onder de term gekoppeld
+zijn.
+
+## Termen invoeren en wijzigen
+Toptermen en termen kunnen toegevoegd en gewijzigd worden.
+Je kunt gericht op zoek naar een term door deze in het zoekvak in te voeren, links onder het parasolletje. Of je kunt door de thesaurus bladeren door termen uit te klappen met de pijltjesknoppen naast de termen. Als er geen narrower termen zijn dan staat er geen pijltje links naast de term.
+
+## Term aan andere termen koppelen
+Als je een term aanklikt (selecteert) dan wordt de term geel. De gegevens over de term verschijnen in het rechterscherm.
+Je kunt een broader of een narrower term aan je term toevoegen door in het vakje NARROWER of BROADER op het kettinkje te klikken.
+
+In het opzoekscherm dat je dan krijgt kun je de juiste term selecteren met behulp van Auto
+Complete. Of je kunt de gewenste term uit het linkerscherm naar het juiste vak in het rechterscherm te slepen.
+
+## Indeling scherm van Term
+In het rechterscherm staan de velden waarmee je een term kunt documenteren. Linksboven kun je Broader, Narrower en Related Termen vastleggen. In het Rechter deel van het scherm (lichtgroen) ga je de term beschrijven.
+
+Labels en teksten kunnen aan een term toegevoegd worden door op het plusteken aan de linkerkant te klikken.
+Ingevoerde teksten en labels kunnen gewijzigd worden door op het Pennetje, links van de tekst, te klikken.
+
+Labels en teksten kunnen verwijderd worden door op de “x” aan de linkerkant te klikken. Alternative Labels kunnen met Preferred labels omgewisseld worden door op de knop met
+Omwisselpijltjes aan de rechterkant te klikken.
+Alle termen en teksten kunnen zowel in het Nederlands als in het Engels ingevoerd worden.
+
+{: .important }
+> Definitions en scopenotes kunnen best lange teksten worden: maar er mogen geen
+bijzondere tekens of nieuwe alinea ́s gebruikt worden bij het invoeren van teksten. Zo gauw
+je een bijzonder teken of een harde return invoert kleurt het tekstvak rood.
+
+---
+
+Let's Party! Thesaurus beheer met Poolparty Versie 1.3
