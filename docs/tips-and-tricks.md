@@ -1,0 +1,143 @@
+---
+layout: home
+title: Tips & Tricks PoolParty
+nav_order: 4
+has_children: false
+---
+
+# Tips & Tricks PoolParty
+
+## Denk eerst na over je thesaurus
+Bij het aanvangen van de creatie van een volledig nieuwe thesaurus is het essentieel om grondig na te denken
+over de hiërarchische structuur ervan. Overweeg het doel van de thesaurus, verzamel de relevante begrippen,
+verfijn de betekenis van elke term, groepeer deze termen in zinvolle categorieën en leg gedegen relaties tussen
+de termen vast, zoals synoniemen, homoniemen, bredere begrippen, smallere begrippen, enzovoort. Het is
+belangrijk om de nodige tijd te nemen om deze zaken vast te stellen; direct aan de slag gaan is niet raadzaam.
+
+## Besef dat de PoolParty omgeving is voor het beheren van thesauri
+PoolParty fungeert als een thesaurusbeheersysteem waarin begrippen en termen worden opgenomen voor
+metadatering en het aanduiden van bijvoorbeeld documenten. Het is belangrijk te begrijpen dat de koppeling
+met applicaties en databases buiten de thesaurus plaatsvindt. PoolParty is niet primair bedoeld om ook data op te
+slaan. Mocht er behoefte zijn aan verduidelijking, neem dan gerust contact met ons op via
+thesauri@cultureelerfgoed.nl.
+
+## Denk ook na over meerdere thesauri
+Denk aan de mogelijkheid om je thesaurus op te splitsen in meerdere thesauri, aangezien dit gunstig kan zijn
+voor de beheersbaarheid. De noodzaak van opsplitsing wordt bovendien bepaald door de toepassing of
+applicatie waarin de thesaurus wordt gebruikt. Let wel op om onnodige opsplitsing te voorkomen, en houd
+rekening met een gebalanceerde afweging tussen beheersbaarheid en overzichtelijkheid.
+
+## Stel eerst een uri strategie vast
+Voordat je begint met het ontwikkelen van je thesaurus, is het van essentieel belang om een URI-strategie vast
+te stellen. Definieer een duidelijke prefix, het deel van de URI waarin de naam van je organisatie wordt
+opgenomen, en waarbij wordt aangegeven dat het een term- en naamthesaurus betreft, bijvoorbeeld als
+https://{organisatie}/term/{naamthesaurus}/.
+
+## Gebruik voor je uri’s uuid’s of een referentienummer (uniek)
+Zorg voor een onderscheidende identificatie van je URI&#39;s door gebruik te maken van UUID&#39;s of
+referentienummers. Hoewel een term op basis van zijn naam, zoals &#39;Mixed drink&#39; in een cocktailthesaurus, een
+URI kan hebben zoals https://digitaalerfgoed-test.poolparty.biz/cocktails/mixeddrink, brengt dit een nadeel met 
+zich mee. Als het label om welke reden dan ook wijzigt, moet ook de URI worden aangepast. Om dit te
+voorkomen, is het raadzaam om een betekenisloos uniek kenmerk, zoals een UUID of referentienummer, toe te
+voegen aan elke specifieke term. In de Cocktail-ontologie is bijvoorbeeld de URI voor &#39;Mixed drink&#39;
+https://digitaalerfgoed-test.poolparty.biz/cocktails/54702498-ad42-4af6-b28a-2276215450da.
+
+## Gebruik de skos ontologie predikaten waarvoor ze bestemt zijn
+Optimaliseer het gebruik van SKOS-ontologie-predicaten door ze doelgericht in te zetten. Hoewel dit
+vanzelfsprekend lijkt, is het belangrijk om van te voren te controleren wat de verschillende SKOS-relaties en
+attributen precies betekenen. Raadpleeg de officiële SKOS-reference op https://www.w3.org/TR/skos-reference/
+voor een gedetailleerd inzicht in hun functies en toepassingen.
+
+## Stel taal in voor je thesaurus
+Bij het opzetten van een project in PoolParty is het verstandig vooraf na te denken over de talen die je wilt
+opnemen, waaronder Nederlands, Frans, Duits en Engels. Het is van groot belang om deze talen standaard in te
+stellen, omdat dit achteraf niet meer mogelijk is. Om later niet in de problemen te komen is het handig om
+meerdere talen op te nemen.
+
+## Werk vooral met toptermen in de plaats van SKOS schemes
+Optimaliseer je thesaurusstructuur door voornamelijk met toptermen te werken in plaats van SKOS schemes.
+Hanteer als uitgangspunt één SKOS scheme per thesaurus, waarbij een nieuwe rubriek of hoofdterm wordt
+gedefinieerd als een SKOS topterm. Deze benadering vergemakkelijkt een gestructureerde en overzichtelijke
+opbouw van je thesaurus.
+
+## Denk goed na over polyhierarchie
+Neem de tijd om goed na te denken over polyhierarchie in je thesaurus. Als een term onder verschillende
+&#39;broader terms&#39; valt, stel dan eerst vast of de term niet twee verschillende begrippen betreft. Indien niet, realiseer
+je dan dat bij het plaatsen van een term onder verschillende &#39;broader terms&#39;, de &#39;narrower terms&#39; ook worden
+opgenomen onder beide &#39;broader terms&#39;.
+
+## Gebruik in bij labels geen hoofdletters mits je te maken hebt met eigennamen
+Bewaar consistentie in je labelling door geen hoofdletters te gebruiken, tenzij het om eigennamen gaat. Het is
+een best practice om labels niet te laten beginnen met een hoofdletter of volledig in kapitalen te schrijven. Dit
+biedt flexibiliteit aan ontwikkelaars bij het tonen van de thesaurus in applicaties, waar ze deze instelling altijd
+kunnen aanpassen.
+
+## Kies duidelijk voor meervoud of enkelvoud bij je prefLabels
+Zorg voor helderheid in je thesaurus door van tevoren een keuze te maken tussen enkelvoud en meervoud voor
+de &#39;prefLabels&#39;. Nadat je deze keuze hebt gemaakt, plaats je de andere optie in &#39;skos:altLabel&#39;, waardoor op beide
+varianten kan worden gezocht. Dit principe geldt voor alle talen die je opneemt in je thesaurus.
+
+## Werk bij homoniemen met qualifiers
+Bij het opbouwen van een thesaurus kunnen snel dezelfde termen met verschillende betekenissen naar voren
+komen. Om deze qua label te onderscheiden, is het gebruik van qualifiers essentieel. Denk zorgvuldig na over
+de naamgeving van de qualifier en plaats deze tussen haakjes achter de naam van de term.
+
+## Zorg dat iedere term een scope Note heeft
+Het opnemen van een scope note voor elke term is belangrijk bij het gebruik van een thesaurus voor het
+metadateren van gegevens. Het is van belang voor degenen die deze taak uitvoeren om geen misverstanden te
+hebben over de betekenis van een term. Dit waarborgt consistentie en uniforme metadatering van gegevens, wat
+op zijn beurt bijdraagt aan het verbeteren van de zoekervaring van de gebruiker.
+
+## Maak een scope note niet te lang
+Bij het opstellen van een scope note, beperk de lengte ervan. Deze is uitsluitend bedoeld voor het verduidelijken
+van de term voor degene die metadateert. Indien uitgebreidere uitleg nodig is, plaats deze dan in
+&#39;skos:definition&#39;. Het is belangrijk te realiseren dat een thesaurus geen encyclopedie is, maar een instrument om
+data te voorzien van zoektermen.
+
+## Werk in je thesaurus met statussen
+Implementeer statussen in je thesaurus om aan te geven of een term als kandidaat of definitief wordt beschouwd.
+Deze aanpak stelt ontwikkelaars in staat om een selectie te maken van welke termen wel of niet gebruikt mogen
+worden voor het metadateren in een applicatie.
+
+## Gebruik een eigen (custom) ontologie bij het opzetten van een custom scheme
+Bij het creëren van een custom scheme in PoolParty is het verstandig een eigen (custom) ontologie te gebruiken.
+In de praktijk stuit je bij het opzetten van een thesaurus al snel op de beperkingen van SKOS, waarbij je vaak
+behoefte hebt aan extra relaties of attributen. In PoolParty kun je een eigen ontologie maken, zelfs op basis van
+standaardvocabulaires zoals schema.org of dcterms.
+Let op, bij het gebruik van een standaardvocabulaire betekent het gebruik van enkele predicaten vaak dat je de
+volledige structuur overneemt. Bovendien voeg je modeltechnisch gezien een ander vocabulaire toe binnen
+SKOS, aangezien bij het maken van een thesaurus in PoolParty alle relaties en attributen vallen onder de class
+skos:Concept.
+
+## Zet altijd eerst je custom ontologie op papier
+Zorg ervoor dat je de basis legt voor je ontologie voordat je begint, vooral als het SKOS-vocabulaire niet
+toereikend is. Documenteer alle aspecten, inclusief eventuele extra relaties en attributen die je wilt toevoegen,
+zoals een attribuut voor het opnemen van verwijzingen naar afbeeldingen.
+
+## Zet je custom scheme uit, wanneer je een skos:broader wijzigt
+Een heel praktische tip, wanneer je dit niet doet duurt de verwerking veel langer en sta je bij iedere aanpassing
+van de broader term een tijd te wachten. Vergeet niet wanneer je klaar bent het schema weer aan te zetten.
+
+## Denk na over het koppelen met andere thesauri via SKOS matches
+Dit wordt nog weleens vergeten. Houd rekening met de mogelijkheid om je thesaurus te koppelen aan andere
+thesauri via SKOS-matches, aangezien dit vaak over het hoofd wordt gezien. Het leggen van deze verbindingen
+stimuleert het zoeken van data over meerdere thesauri heen. Wij beschouwen dit als een essentieel aspect bij het
+opzetten van een thesaurus, zoals vertaald binnen de NDE naar het
+https://termennetwerk.netwerkdigitaalerfgoed.nl/. Zorg voor regelmatig onderhoud en controle van deze
+matches, zoals skos:exactMatch en skos:closeMatch. Het principe blijft gelden: gebruik dit attribuut waarvoor
+het is bedoeld.
+
+## Zorg voor het regelmatig updaten van je thesaurus
+Vernieuw je Extraction Model om ervoor te zorgen dat je thesaurus altijd up-to-date is. Het niet actueel houden
+van je model kan vaak resulteren in een oranje status van je project.
+
+## Doe regelmatig een kwaliteitscontrole via Quality management
+Zodat je inzicht krijgt in eventuele conflicten in je thesaurus.
+
+## Maak je thesaurus niet onnodig complex
+Bewaar eenvoud in je thesaurus en vermijd onnodige complexiteit. Hanteer als richtlijn één ontologie voor één
+organisatie en één custom scheme voor één project. Het gebruik van meerdere schemes maakt de structuur
+onoverzichtelijk en is vaak niet nodig. Door gebruik te maken van domain en range kun je de inrichting zo
+optimaliseren dat je per domein alleen de relevante attributen of relaties ziet, wat bijdraagt aan
+overzichtelijkheid en effectiviteit. Voor meer uitleg over domain en range kunt u altijd naar ons mailen op:
+thesauri@cultureelerfgoed.nl.
