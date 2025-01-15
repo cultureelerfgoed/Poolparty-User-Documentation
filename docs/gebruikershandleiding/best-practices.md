@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Project Aanmaken
+title: Best practices
 parent: Gebruikershandleiding
 nav_order: 2
 ---

@@ -1,11 +1,12 @@
 ---
 layout: home
-title: Project Aanmaken
+title: Thesaurus
 parent: verdieping
 ---
 
 # Wat is een thesaurus?
-{: .important } draft!!
+{: .important } 
+> draft!!
 
 Een thesaurus is een vergelijkende woordenboek van semantisch met elkaar
 gerelateerde termen, die meestal één kennisveld bestrijken. Thesauri hebben een

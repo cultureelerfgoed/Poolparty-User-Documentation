@@ -1,6 +1,6 @@
 ---
 layout: home
-title: verdieping
+title: Verdieping
 nav_order: 3
 has_children: true
 ---
