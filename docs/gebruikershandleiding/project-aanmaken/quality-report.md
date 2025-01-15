@@ -1,0 +1,17 @@
+---
+layout: home
+title: Quality Report
+parent: Project Aanmaken
+nav_order: 5
+---
+# Quality Report
+
+Je kunt verschillende Quality reports genereren. Op dit moment staat de standaard rapportage aan. Die checkt of de hierarchische relaties van termen kloppen, of er geen
+termen met dezelfde labels zijn en of er losse termen in je thesaurus ronddolen.
+
+Als er een issue in je thesaurus zit dan kun je hier zien waar de issue zit en dan kun je hem
+corrigeren.
+
+---
+
+Let's Party! Thesaurus beheer met Poolparty Versie 1.3

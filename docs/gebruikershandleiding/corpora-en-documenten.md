@@ -5,5 +5,42 @@ parent: Gebruikershandleiding
 nav_order: 4
 has_children: true
 ---
+{: .no_toc .text-delta }
 
 # Corpora en Documenten
+
+Poolparty kan Corpora “Extracten” om thesaurustermen te ondersteunen of om nieuwe termen geautomatiseerd aangeleverd te krijgen.
+
+Het Corpus kan bekeken worden door te klikken op de tweede knop van Links in het linker navigatiemenu.
+Bij het tabblad Corpus Documents in het rechterscherm kun je nieuwe documenten aan een Corpus toevoegen. 
+
+{: .important }
+> Let op! De documenten mogen niet groter dan 10 mb zijn.
+
+Met de rechtermuisknop op Corpora kun je een nieuw Corpus van documenten toevoegen. Als je een of meerdere documenten aan een corpus hebt toegevoegd dan dien je die documenten te analyseren. Dat doe je door in het Metadata tabblad op de knop Recalculate Corpus Analysis te klikken. Dit duurt een tijdje.
+
+Op het tabblad Extracted Concepts kun je zien welke concepten uit je thesaurus in je corpus zijn teruggevonden.
+Op het tabblad extracted terms vind je alle termen die niet in je thesaurus voorkomen, maar die potentieel zinvol kunnen zijn. De meeste termen zijn onzinnig, maar af en toe kom je
+heel goede termen tegen.
+
+Vanuit het corpus kun je terugkeren naar (de normale, bewerkbare versie van) de thesaurus via de linkerknop in het linker navigatie menu.
+Je kunt naar een willekeurige term in de thesaurus gaan.
+
+En op het tabje Documents klikken. Als er een verwijzing in het Corpus naar de term voorkomt dan zal het corpus document hier
+vermeld staan.
+
+
+## Documentatie
+
+Als je een term beschreven hebt en je wil je bronnen en documentatie vast leggen, dan klik
+je op het tabblad Documentatie.
+
+Je kunt referentie literatuur en bronnen toevoegen door op de Plus knoppen te klikken. Je
+kunt zowel bibliografische bronnen als URLs naar websites vastleggen.
+Let er bij URLs op dat je gebruik maakt van een duurzame (persistent) verwijzing. Als je
+Wikipedia Citeert, klik dan aan de Linkerkant van de Wikipedia pagina altijd op de knop
+“Deze pagina citeren”: en gebruik de URL die je dan in je browserbalk krijgt.
+
+---
+
+Let's Party! Thesaurus beheer met Poolparty Versie 1.3

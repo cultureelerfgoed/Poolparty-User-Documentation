@@ -1,8 +1,27 @@
 ---
 layout: home
-title: Export Project
+title: Backup en Export Project
 parent: Project Aanmaken
-nav_order: 4
+nav_order: 6
+---
+{: .no_toc .text-delta }
+
+
+# Backup en Export Project
+
+Poolparty maakt zelf automatisch backups. Daar hoef je niks voor te doen.
+Wil je nu flink experimenteren dan kun je het hele project exporteren als excel sheet of als
+RFD project.
+Als je het gehele project als RDF exporteert en dan Create project kiest en dan Create from
+file een nieuwe thesaurus maakt, dan kun je een testkopie van deze thesaurus maken en
+bewerken.
+
+{: .important }
+> Documentatie, geolocaties enzovoorts komen NIET mee in de excel export. Die komen alleen mee in de TRIX en TRIG exports via RDF export. De SKOS gegevens komen wel in excel mee.
+
+Je kunt ook een term of een subtree exporteren door de term of subtree aan te klikken en
+dan rechtermuisknop.
+
 ---
 
-# Export Project
+Let's Party! Thesaurus beheer met Poolparty Versie 1.3
