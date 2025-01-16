@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Q&A
+title: Veelgestelde vragen
 nav_order: 5
 has_children: true
 ---
