@@ -14,10 +14,10 @@ Semantic Web Company. De term &quot;Semantic Web&quot; verwijst naar het web van
 technologieën zoals RDF, SPARQL en SKOS. Over al deze onderwerpen vind je meer in deze handleiding.
 
 Mocht je hulp nodig hebben of vragen hebben over deze handleiding kun je contact
-opnemen met de beheerders van PoolParty via thesauri@cultureelerfgoed.nl
+opnemen met de beheerders van PoolParty via [thesauri@cultureelerfgoed.nl](mailto:thesauri@cultureelerfgoed.nl)
 
 
 
-[GitHub RCE]: https://github.com/cultureelerfgoed
+[GitHub RCE]: [https://github.com/cultureelerfgoed](https://github.com/cultureelerfgoed)
 
 
