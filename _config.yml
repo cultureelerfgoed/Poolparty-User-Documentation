@@ -37,15 +37,5 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 # new
 markdown: kramdown
 
-# _config.yml
-kramdown:
-  input: GFM
-  hard_wrap: false
-  syntax_highlighter_opts:
-    disable: true
-  parse_block_html: true
-  parse_span_html: true
-  html_to_native: true
 
-safe: true
 
