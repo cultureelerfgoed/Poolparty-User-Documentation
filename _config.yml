@@ -38,4 +38,5 @@ nav_sort: case_sensitive # Capital letters sorted before lowercase
 markdown: kramdown
 
 
-
+just_the_docs:
+  custom_css: assets/css/custom.scss
