@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap');
+
+h1, h2, h3 {
+  font-family: 'Lora', serif;
+}
+
+p, ul, ol {
+    font-size: 17px;
+  }
+  
+/* .nav-list-link,
+.nav-list .nav-list-item > .nav-list-link,
+.nav-list .nav-list-item > .nav-list-expander {
+  color: rgb(39, 39, 63) !important; // Override the Sass variable
+ } */
+  
+.nav-list-link {
+  color: rgb(39, 39, 63);
+  &:hover {
+    color: rgb(16, 16, 107);
+  }
+
+&.active, &.current { 
+  color: rgb(63, 103, 212) !important; 
+  font-weight: bold; 
+  }
+}
+
+/* Parent pagina's (alle breadcrumb links behalve de laatste) */
+.breadcrumb-nav-list-item:not(:last-child) a {
+  color: rgb(63, 103, 212) !important; /* Pas de kleur aan naar je gewenste blauw */
+  text-decoration: none; /* Optioneel: verwijdert onderstreping */
+}
+
+.breadcrumb-nav-list-item:not(:last-child) a:hover {
+  color: rgb(31, 51, 105); /* Optioneel: donkerder blauw bij hover */
+}
+
+/* Actieve pagina (laatste item in breadcrumb) */
+.breadcrumb-nav-list-item:last-child {
+  color: gray !important; /* Kleur voor de huidige pagina */
+  font-weight: bold; /* Optioneel: maakt het vetgedrukt */
+}
+
+.side-bar {
+  width: 20%;
+}
+
+@media (max-width: 768px) { /* Voor tablets en kleinere schermen */
+  .side-bar {
+    width: 100%; /* Sidebar neemt volledige breedte */
+  }
+
+  .main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+
+.site-title {
+  font-size: 16px !important; /* Kies je gewenste grootte */
+}
+
+
+.main-content a { /* Of de container die je documentinhoud bevat */
+  color: rgb(63, 103, 212) !important;
+}
