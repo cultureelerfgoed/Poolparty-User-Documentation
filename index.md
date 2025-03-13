@@ -4,6 +4,35 @@ layout: home
 nav_order: 1
 ---
 
+{: .no_toc .text-delta }
+
+
+<script>
+{% include js/custom.js %}
+</script>
+
+<!-- Overlay (only once) -->
+<div id="overlay" 
+     style="display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.8); 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 1000;">
+  
+  <img id="zoomImage" 
+       alt="Zoomed Image" 
+       style="max-width: 90%; 
+              max-height: 90%; 
+              cursor: zoom-out;" 
+       onclick="closeZoom()" />
+</div>
+
+
 # PoolParty Gebruikers Documentatie.
 
 Deze handleiding is geschreven voor iedereen die net begint met werken in PoolParty in samenwerking met de RCE, of voor mensen die de applicatie al kennen maar graag in meer detail willen weten wat er allemaal mogelijk is, of hoe je een specifieke handeling uitvoert.
