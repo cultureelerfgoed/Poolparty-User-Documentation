@@ -1,9 +1,10 @@
 ---
 layout: home
-title: LD-Frontend
-parent: Gebruikershandleiding
-nav_order: 12
+title: Verdieping voor Knowledge Engineers
+nav_order: 4
+has_children: true
 ---
+
 {: .no_toc .text-delta }
 
 
@@ -32,4 +33,4 @@ nav_order: 12
        onclick="closeZoom()" />
 </div>
 
-## PoolParty Linked Data Frontend 
+# Verdieping en Handleiding voor Knowledge Engineers
