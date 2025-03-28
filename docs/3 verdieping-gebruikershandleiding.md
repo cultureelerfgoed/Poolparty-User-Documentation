@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Verdieping voor Knowledge Engineers
+title: Verdieping Gebruikershandleiding
 nav_order: 4
 has_children: true
 ---
@@ -33,4 +33,6 @@ has_children: true
        onclick="closeZoom()" />
 </div>
 
-# Verdieping en Handleiding voor Knowledge Engineers
+# Verdieping Voor de Gebruikershandleiding
+
+In dit deel van de handleiding vind je aanvullende onderwerpen die extra (technische) context bieden bij het gebruik van PoolParty. Ook zijn hier enkele handelingen beschreven die niet voor alle gebruikers relevant zijn, maar wel van waarde kunnen zijn voor specifieke toepassingen of gevorderde gebruikers.
