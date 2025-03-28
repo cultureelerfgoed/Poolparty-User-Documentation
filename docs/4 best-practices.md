@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Best practices
+title: Best practices & veelgestelde vragen
 nav_order: 5
 has_children: true
 ---
@@ -33,9 +33,9 @@ has_children: true
        onclick="closeZoom()" />
 </div>
 
-## Best practices
+## Best practices & veelgestelde vragen
 
-Deze best practices zijn gericht op gebruikers van PoolParty in samenwerking met de RCE.
+Deze best practices en veelgestelde vragen zijn gericht op gebruikers van PoolParty in samenwerking met de RCE.
 Deze zijn er op gericht om het beheer zo goed mogelijk te doen. Als elke gebruiker anders
 om gaat met de applicatie wordt het vanuit de RCE lastig om hulp te bieden en PoolParty
 draaiend te houden.

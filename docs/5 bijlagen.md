@@ -1,8 +1,8 @@
 ---
 layout: home
-title: Veelvoorkomende vragen
-parent: Veelgestelde vragen
-nav-order: 1
+title: Bijlagen
+nav_order: 7
+has_children: true
 ---
 
 {: .no_toc .text-delta }
@@ -33,5 +33,6 @@ nav-order: 1
        onclick="closeZoom()" />
 </div>
 
+# Bijlagen
 
-# Veelvoorkomende vragen
+In de bijlagen vind je relevante documentatie en voorbeelden die aansluiten op de inhoud van deze handleiding. Denk hierbij aan SPARQL-queries, praktische toepassingen en aanvullende uitleg ter ondersteuning van het werken met PoolParty.
