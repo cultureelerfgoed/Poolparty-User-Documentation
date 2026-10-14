@@ -36,3 +36,5 @@ has_children: true
 
 
 Begin je net? Volg de oefening [Je eerste concept]({% link docs/2 gebruikershandleiding/je-eerste-concept.md %}). Lees eerst [Inloggen]({% link docs/2 gebruikershandleiding/2.1 inloggen.md %}) en [De PoolParty omgeving]({% link docs/2 gebruikershandleiding/2.2 poolparty-omgeving.md %}) als je de applicatie nog niet kent.
+
+Heb je de eerste oefening afgerond? Ga verder met [Een bestaand concept aanpassen]({% link docs/2 gebruikershandleiding/een-bestaand-concept-aanpassen.md %}) en [Kwaliteit controleren (Quality Report)]({% link docs/2 gebruikershandleiding/2.10 quality-report.md %}). Zoek onbekende woorden op in de [begrippenlijst]({% link docs/6. glossary.md %}).

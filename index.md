@@ -32,11 +32,13 @@ Volg deze route. Je hebt een account en toegang tot een project nodig.
 ## Wat wil je doen?
 
 <div class="pp-grid">
-  <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.5 invoerafspraken.md %}"><strong>Begrippen beschrijven</strong><span>Gebruik de afspraken voor namen, synoniemen en toelichtingen.</span></a>
+  <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.5 invoerafspraken.md %}"><strong>Begrippen beschrijven</strong><span>Gebruik de afspraken voor voorkeursnamen, alternatieve namen en toelichtingen.</span></a>
   <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.4 hierarchie-en-polyhierarchie.md %}"><strong>Begrippen ordenen</strong><span>Leg relaties tussen bredere en specifiekere begrippen.</span></a>
   <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.10 quality-report.md %}"><strong>Je thesaurus controleren</strong><span>Bekijk meldingen in het Quality Report.</span></a>
   <a class="pp-card" href="{% link docs/4 best-practices.md %}"><strong>Een vraag oplossen</strong><span>Vind tips, veelgemaakte fouten en antwoorden.</span></a>
 </div>
+
+Heb je je eerste concept gemaakt? Oefen daarna met [een bestaand concept aanpassen]({% link docs/2 gebruikershandleiding/een-bestaand-concept-aanpassen.md %}).
 
 ## Thesauri bij de RCE
 
