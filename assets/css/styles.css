@@ -86,3 +86,15 @@ p, ul, ol {
 @media (max-width: 799px) {
   .side-bar .site-footer { display: none; }
 }
+
+/* Long property URIs in prose should stay within narrow viewports. */
+.main-content p code,
+.main-content li code,
+.main-content td code {
+  white-space: normal;
+  overflow-wrap: anywhere;
+}
+.main-content pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
