@@ -42,21 +42,6 @@ p, ul, ol {
   font-weight: bold; /* Optioneel: maakt het vetgedrukt */
 }
 
-.side-bar {
-  width: 20%;
-}
-
-@media (max-width: 768px) { /* Voor tablets en kleinere schermen */
-  .side-bar {
-    width: 100%; /* Sidebar neemt volledige breedte */
-  }
-
-  .main {
-    width: 100%;
-    margin-left: 0;
-  }
-}
-
 .site-title {
   font-size: 16px !important; /* Kies je gewenste grootte */
 }
@@ -64,4 +49,40 @@ p, ul, ol {
 
 .main-content a { /* Of de container die je documentinhoud bevat */
   color: rgb(63, 103, 212) !important;
+}
+
+/* Landing page: keep the theme's sidebar and main-column widths in sync. */
+.main-content-wrap, .main-content, .pp-home { min-width: 0; }
+.main-content { overflow-wrap: anywhere; }
+.main-content img { max-width: 100%; height: auto; }
+.pp-home { --pp-ink: #173b4a; --pp-accent: #176477; }
+.pp-hero { padding: clamp(1.25rem, 4vw, 2rem); background: #edf5f5; border-top: 4px solid var(--pp-accent); border-radius: 0 0 12px 12px; }
+.pp-home .pp-eyebrow { margin: 0 0 0.75rem; color: var(--pp-ink); font-size: 0.8rem; font-weight: 700; letter-spacing: 0.04em; }
+.pp-home h1 { margin-top: 0; color: var(--pp-ink); font-size: clamp(1.8rem, 5vw, 2.5rem); line-height: 1.2; }
+.pp-home h2 { margin-top: 2rem; font-size: 1.4rem; }
+.pp-actions { display: flex; flex-wrap: wrap; gap: 0.75rem 1rem; align-items: center; margin-top: 1.5rem; }
+.main-content .pp-button { display: inline-block; padding: 0.75rem 1rem; background: #173b4a; color: #fff !important; border-radius: 6px; font-weight: 700; text-decoration: none; }
+.main-content .pp-secondary { font-weight: 700; text-decoration: underline; }
+.pp-route { padding-left: 1.5rem; }
+.pp-route li { padding: 0.35rem 0 0.7rem 0.25rem; }
+.pp-route a { font-weight: 700; }
+.pp-route span { display: block; font-size: 0.95rem; }
+.pp-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1rem; }
+.main-content .pp-card { display: flex; flex-direction: column; gap: 0.5rem; padding: 1.25rem; border: 1px solid #c7d8dc; border-radius: 8px; text-decoration: none; background: #fff; }
+.pp-card strong { font-size: 1.05rem; }
+.pp-card span { color: #3c484d; font-size: 0.95rem; line-height: 1.55; }
+.main-content .pp-card:hover { background: #f1f7f8; border-color: #176477; }
+.pp-home a:focus-visible { outline: 3px solid #176477; outline-offset: 4px; }
+.pp-help { margin-top: 2rem; padding: 1rem 1.25rem; background: #f5f6f7; border-radius: 8px; }
+.pp-home .pp-help h2 { margin-top: 0; }
+.pp-help p:last-child { margin-bottom: 0; }
+@media (max-width: 600px) {
+  .pp-grid { grid-template-columns: minmax(0, 1fr); }
+  .pp-actions { align-items: stretch; flex-direction: column; }
+  .pp-button { text-align: center; }
+}
+
+/* The fixed sidebar footer must not overlap mobile page content. */
+@media (max-width: 799px) {
+  .side-bar .site-footer { display: none; }
 }

@@ -1,52 +1,53 @@
 ---
-title: Intro
+title: Start
 layout: home
 nav_order: 1
+has_toc: false
 ---
 
-{: .no_toc .text-delta }
+<div class="pp-home" markdown="1">
+<div class="pp-hero" markdown="1">
+<p class="pp-eyebrow">Rijksdienst voor het Cultureel Erfgoed</p>
 
+# Aan de slag met PoolParty
 
-<script>
-{% include js/custom.js %}
-</script>
+Beheer jouw thesaurus in PoolParty. Deze handleiding helpt je bij het maken, beschrijven en verbinden van erfgoedbegrippen, met stappen en voorbeelden voor jouw werk bij de RCE.
 
-<!-- Overlay (only once) -->
-<div id="overlay" 
-     style="display: none; 
-            position: fixed; 
-            top: 0; 
-            left: 0; 
-            width: 100%; 
-            height: 100%; 
-            background: rgba(0, 0, 0, 0.8); 
-            justify-content: center; 
-            align-items: center; 
-            z-index: 1000;">
-  
-  <img id="zoomImage" 
-       alt="Zoomed Image" 
-       style="max-width: 90%; 
-              max-height: 90%; 
-              cursor: zoom-out;" 
-       onclick="closeZoom()" />
+<div class="pp-actions">
+  <a class="pp-button" href="{% link docs/2 gebruikershandleiding/je-eerste-concept.md %}">Maak je eerste concept</a>
+  <a class="pp-secondary" href="{% link docs/2 gebruikershandleiding.md %}">Bekijk de handleiding</a>
+</div>
 </div>
 
+## Nieuw in PoolParty? Begin hier
 
-# PoolParty Gebruikers Documentatie.
+Volg deze route. Je hebt een account en toegang tot een project nodig.
 
-Deze handleiding is geschreven voor iedereen die net begint met werken in PoolParty in samenwerking met de RCE, of voor mensen die de applicatie al kennen maar graag in meer detail willen weten wat er allemaal mogelijk is, of hoe je een specifieke handeling uitvoert.
+<ol class="pp-route">
+  <li><a href="{% link docs/2 gebruikershandleiding/2.1 inloggen.md %}">Log in</a><span>Open PoolParty met jouw account.</span></li>
+  <li><a href="{% link docs/2 gebruikershandleiding/2.2 poolparty-omgeving.md %}">Leer de omgeving kennen</a><span>Vind je project, de werkbalk en de begrippenboom.</span></li>
+  <li><a href="{% link docs/2 gebruikershandleiding/je-eerste-concept.md %}">Maak je eerste concept</a><span>Oefen met een erfgoedbegrip, een label en een toelichting.</span></li>
+</ol>
 
-In deze handleiding vind je alle stappen die je moet volgen om een volledig werkende thesaurus te maken vanuit PoolParty. De PoolParty Semantic Suite is een technologieplatform dat wordt aangeboden door de Semantic Web Company. De term “Semantic Web” verwijst naar het web van gekoppelde gegevens. Semantische webtechnologieën stellen mensen in staat om gegevensarchieven op het web te creëren, vocabulaires op te bouwen, thesauri te maken en regels te schrijven voor het omgaan met gegevens, vaak door middel van Linked Data. Linked Data wordt mogelijk gemaakt door technologieën zoals RDF, SPARQL en SKOS. Over al deze onderwerpen vind je meer in deze handleiding.
+## Wat wil je doen?
 
-Zie ook [Thesauri bij de RCE](https://kennis.cultureelerfgoed.nl/index.php/Thema/Thesauri_bij_de_RCE), [Thesauri bij de RCE - Cultuurhistorische Thesaurus](https://kennis.cultureelerfgoed.nl/index.php/Thesauri_bij_de_RCE_-_Cultuurhistorische_Thesaurus) en als voorbeeld de [RCE Erfgoedthesaurus](https://thesaurus.cultureelerfgoed.nl/).
+<div class="pp-grid">
+  <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.5 invoerafspraken.md %}"><strong>Begrippen beschrijven</strong><span>Gebruik de afspraken voor namen, synoniemen en toelichtingen.</span></a>
+  <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.4 hierarchie-en-polyhierarchie.md %}"><strong>Begrippen ordenen</strong><span>Leg relaties tussen bredere en specifiekere begrippen.</span></a>
+  <a class="pp-card" href="{% link docs/2 gebruikershandleiding/2.10 quality-report.md %}"><strong>Je thesaurus controleren</strong><span>Bekijk meldingen in het Quality Report.</span></a>
+  <a class="pp-card" href="{% link docs/4 best-practices.md %}"><strong>Een vraag oplossen</strong><span>Vind tips, veelgemaakte fouten en antwoorden.</span></a>
+</div>
 
-Zie ook vanuit het netwerk: [Let’s PoolParty: samenwerken aan een thesaurus](https://netwerkdigitaalerfgoed.nl/nieuws/lets-poolparty-samenwerken-aan-een-thesaurus/)
+## Thesauri bij de RCE
 
-Mocht je hulp nodig hebben of vragen hebben over deze handleiding, dan kun je contact opnemen met de beheerders van PoolParty via  [thesauri@cultureelerfgoed.nl](mailto:thesauri@cultureelerfgoed.nl)
+Een thesaurus helpt je om erfgoed met gedeelde begrippen te beschrijven. Lees meer over [thesauri bij de RCE](https://kennis.cultureelerfgoed.nl/index.php/Thema/Thesauri_bij_de_RCE) of bekijk de [RCE Erfgoedthesaurus](https://thesaurus.cultureelerfgoed.nl/).
 
+Wil je verder leren? Bekijk de [verdieping]({% link docs/3 verdieping-gebruikershandleiding.md %}) of zoek een term op in de [begrippenlijst]({% link docs/6. glossary.md %}).
 
+<div class="pp-help" markdown="1">
 
-[GitHub RCE]: [https://github.com/cultureelerfgoed](https://github.com/cultureelerfgoed)
+## Hulp nodig?
 
-
+Neem contact op met de PoolParty-beheerders via [thesauri@cultureelerfgoed.nl](mailto:thesauri@cultureelerfgoed.nl). Vermeld je project en de stap waarbij je vastloopt.
+</div>
+</div>
