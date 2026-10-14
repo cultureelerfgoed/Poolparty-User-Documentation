@@ -1,174 +1,96 @@
-# just-the-docs-template
+# PoolParty-handleiding van de RCE
 
-This is a *bare-minimum* template to create a [Jekyll] site that:
+Deze PoolParty-handleiding helpt je om erfgoedbegrippen te maken, te beschrijven en te verbinden. De documentatie is bedoeld voor gebruikers die met PoolParty werken in samenwerking met de Rijksdienst voor het Cultureel Erfgoed (RCE).
 
-- uses the [Just the Docs] theme;
-- can be built and published on [GitHub Pages];
-- can be built and previewed locally, and published on other platforms.
+**[Lees de handleiding](https://cultureelerfgoed.github.io/Poolparty-User-Documentation/)**
 
-More specifically, the created site:
+## Beginnen met PoolParty
 
-- uses a gem-based approach, i.e. uses a `Gemfile` and loads the `just-the-docs` gem;
-- uses the [GitHub Pages / Actions workflow] to build and publish the site on GitHub Pages.
+De handleiding bevat een route voor beginners, oefeningen en uitleg bij veelgebruikte handelingen.
 
-To get started with creating a site, simply:
+- [Je eerste concept](docs/2%20gebruikershandleiding/je-eerste-concept.md): maak een begrip, voeg een naam en een toelichting toe en controleer de relatie.
+- [Een bestaand concept aanpassen](docs/2%20gebruikershandleiding/een-bestaand-concept-aanpassen.md): wijzig een naam, vul een toelichting aan en bekijk History.
+- [Invoerafspraken](docs/2%20gebruikershandleiding/2.5%20invoerafspraken.md): kies het juiste veld voor voorkeursnamen, alternatieve namen en toelichtingen.
+- [Kwaliteit controleren](docs/2%20gebruikershandleiding/2.10%20quality-report.md): lees meldingen uit Quality Report en bepaal je volgende actie.
+- [SPARQL-voorbeelden](docs/5%20bijlagen/5.2%20sparql-queries.md): vraag labels en relaties op, filter op Nederlands en gebruik OPTIONAL voor gegevens die kunnen ontbreken.
+- [Begrippenlijst](docs/6.%20glossary.md): zoek Nederlandse benamingen en Engelse schermnamen op.
 
-1. click "[use this template]" to create a GitHub repository
-2. go to Settings > Pages > Build and deployment > Source, and select GitHub Actions
+Voor oefeningen heb je een PoolParty-account, toegang tot een oefenproject en bewerkrechten nodig. De beschikbare functies hangen af van jouw versie, rol en projectinstellingen.
 
-If you want to maintain your docs in the `docs` directory of an existing project repo, see [Hosting your docs from an existing project repo](#hosting-your-docs-from-an-existing-project-repo).
+## Wat staat er in deze repository?
 
-After completing the creation of your new site on GitHub, update it as needed:
+| Bestand of map | Inhoud |
+| --- | --- |
+| `index.md` | De landingspagina en startroute. |
+| `docs/2 gebruikershandleiding/` | Handelingen en beginnersoefeningen. |
+| `docs/3 verdieping gebruikershandleiding/` | Verdieping over SKOS, projectkoppelingen en de API. |
+| `docs/4 best-practices/` | Tips en pagina’s voor fouten en vragen. |
+| `docs/5 bijlagen/` | Aanvullende bronnen en SPARQL-voorbeelden. |
+| `docs/6. glossary.md` | De begrippenlijst. |
+| `docs/afbeeldingen/` en `docs/icons/` | Afbeeldingen en pictogrammen. |
+| `assets/css/styles.css` | Aanvullende opmaak, waaronder de landingspagina en mobiele weergave. |
+| `_includes/` en `_layouts/` | Gedeelde onderdelen en paginasjablonen. |
+| `_config.yml` | Instellingen voor de website. |
+| `Gemfile` en `Gemfile.lock` | Afhankelijkheden voor het bouwen van de website. |
+| `.github/workflows/pages.yml` | De workflow voor bouwen en publiceren op GitHub Pages. |
 
-## Replace the content of the template pages
+## Documentatie aanpassen
 
-Update the following files to your own content:
+De pagina’s gebruiken Markdown en Jekyll. Bovenaan staat een instellingenblok. Een nieuwe pagina onder de gebruikershandleiding krijgt bijvoorbeeld:
 
-- `index.md` (your new home page)
-- `README.md` (information for those who access your site repo on GitHub)
+```yaml
+---
+layout: home
+title: Naam van jouw hoofdstuk
+parent: Gebruikershandleiding
+nav_order: 15
+---
+```
 
-## Changing the version of the theme and/or Jekyll
+`parent` moet precies overeenkomen met de titel van de bovenliggende pagina. Kies een vrije `nav_order` binnen die groep. Behoud bestaande bestandsnamen waar mogelijk, zodat links blijven werken.
 
-Simply edit the relevant line(s) in the `Gemfile`.
+Houd bij het schrijven deze afspraken aan:
 
-## Adding a plugin
+- Schrijf in het Nederlands, spreek de lezer aan met **je** en gebruik korte stappen.
+- Gebruik **concept** voor het begrip en **naam** of **label** voor de benaming.
+- Noem bij een veld of knop ook de Engelse schermnaam, bijvoorbeeld **voorkeursnaam (Preferred Label)**.
+- Geef voorbeelden en vermeld of het oefenteksten of officiële definities zijn.
+- Voeg bronnen toe en onderscheid SKOS-regels van aanvullende projectafspraken.
+- Controleer interne links, afbeeldingen en de weergave op desktop en mobiel.
 
-The Just the Docs theme automatically includes the [`jekyll-seo-tag`] plugin.
+Gebruik voor een interne link in een websitepagina de Jekyll-linkvorm:
 
-To add an extra plugin, you need to add it in the `Gemfile` *and* in `_config.yml`. For example, to add [`jekyll-default-layout`]:
+```liquid
+[Invoerafspraken]({% link docs/2 gebruikershandleiding/2.5 invoerafspraken.md %})
+```
 
-- Add the following to your site's `Gemfile`:
+Gebruik in deze README gewone Markdown-links. De README verschijnt op GitHub en is uitgesloten van de gebouwde website.
 
-  ```ruby
-  gem "jekyll-default-layout"
-  ```
+## Lokaal bekijken
 
-- And add the following to your site's `_config.yml`:
+De website gebruikt [Jekyll](https://jekyllrb.com/) en [Just the Docs](https://just-the-docs.github.io/just-the-docs/). De publicatieworkflow gebruikt Ruby 3.3. Installeer Ruby en Bundler voordat je lokaal bouwt; de lockfile vermeldt Bundler 2.5.23.
 
-  ```yaml
-  plugins:
-    - jekyll-default-layout
-  ```
+Voer vanuit de hoofdmap van de repository uit:
 
-Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
+```shell
+bundle install
+bundle exec jekyll serve
+```
 
-## Publishing your site on GitHub Pages
+Open daarna [de lokale website](http://localhost:4000/Poolparty-User-Documentation/). De gebouwde bestanden staan in `_site/`. Voor alleen een bouwcontrole gebruik je:
 
-1.  If your created site is `YOUR-USERNAME/YOUR-SITE-NAME`, update `_config.yml` to:
+```shell
+bundle exec jekyll build
+```
 
-    ```yaml
-    title: YOUR TITLE
-    description: YOUR DESCRIPTION
-    theme: just-the-docs
+## Publicatie
 
-    url: https://YOUR-USERNAME.github.io/YOUR-SITE-NAME
+De [GitHub Actions-workflow](.github/workflows/pages.yml) bouwt en publiceert de website wanneer een wijziging in de ingestelde websitebestanden op `main` terechtkomt. Je kunt de workflow ook handmatig starten via **Actions**.
 
-    aux_links: # remove if you don't want this link to appear on your pages
-      Template Repository: https://github.com/YOUR-USERNAME/YOUR-SITE-NAME
-    ```
+In **Settings > Pages** hoort de publicatiebron op **GitHub Actions** te staan. Controleer na een publicatie de workflowstatus en de live website. Een wijziging die alleen deze README raakt, start geen websitepublicatie.
 
-2.  Push your updated `_config.yml` to your site on GitHub.
+## Bronnen en contact
 
-3.  In your newly created repo on GitHub:
-    - go to the `Settings` tab -> `Pages` -> `Build and deployment`, then select `Source`: `GitHub Actions`.
-    - if there were any failed Actions, go to the `Actions` tab and click on `Re-run jobs`.
+Bekijk de [aanvullende bronnen](docs/5%20bijlagen/5.1%20doorverwijzingen-naar-aanvullende-bronnen.md) voor de RCE-kennisbank, Graphwise-documentatie, thesaurusdatasets en controles met SPARQL.
 
-## Building and previewing your site locally
-
-Assuming [Jekyll] and [Bundler] are installed on your computer:
-
-1.  Change your working directory to the root directory of your site.
-
-2.  Run `bundle install`.
-
-3.  Run `bundle exec jekyll serve` to build your site and preview it at `localhost:4000`.
-
-    The built site is stored in the directory `_site`.
-
-## Publishing your built site on a different platform
-
-Just upload all the files in the directory `_site`.
-
-## Customization
-
-You're free to customize sites that you create with this template, however you like!
-
-[Browse our documentation][Just the Docs] to learn more about how to use this theme.
-
-## Hosting your docs from an existing project repo
-
-You might want to maintain your docs in an existing project repo. Instead of creating a new repo using the [just-the-docs template](https://github.com/just-the-docs/just-the-docs-template), you can copy the template files into your existing repo and configure the template's Github Actions workflow to build from a `docs` directory. You can clone the template to your local machine or download the `.zip` file to access the files.
-
-### Copy the template files
-
-1.  Create a `.github/workflows` directory at your project root if your repo doesn't already have one. Copy the `pages.yml` file into this directory. GitHub Actions searches this directory for workflow files.
-
-2.  Create a `docs` directory at your project root and copy all remaining template files into this directory.
-
-### Modify the GitHub Actions workflow
-
-The GitHub Actions workflow that builds and deploys your site to Github Pages is defined by the `pages.yml` file. You'll need to edit this file to that so that your build and deploy steps look to your `docs` directory, rather than the project root.
-
-1.  Set the default `working-directory` param for the build job.
-
-    ```yaml
-    build:
-      runs-on: ubuntu-latest
-      defaults:
-        run:
-          working-directory: docs
-    ```
-
-2.  Set the `working-directory` param for the Setup Ruby step.
-
-    ```yaml
-    - name: Setup Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: '3.3'
-          bundler-cache: true
-          cache-version: 0
-          working-directory: '${{ github.workspace }}/docs'
-    ```
-
-3.  Set the path param for the Upload artifact step:
-
-    ```yaml
-    - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: docs/_site/
-    ```
-
-4.  Modify the trigger so that only changes within the `docs` directory start the workflow. Otherwise, every change to your project (even those that don't affect the docs) would trigger a new site build and deploy.
-
-    ```yaml
-    on:
-      push:
-        branches:
-          - "main"
-        paths:
-          - "docs/**"
-    ```
-
-## Licensing and Attribution
-
-This repository is licensed under the [MIT License]. You are generally free to reuse or extend upon this code as you see fit; just include the original copy of the license (which is preserved when you "make a template"). While it's not necessary, we'd love to hear from you if you do use this template, and how we can improve it for future use!
-
-The deployment GitHub Actions workflow is heavily based on GitHub's mixed-party [starter workflows]. A copy of their MIT License is available in [actions/starter-workflows].
-
-----
-
-[^1]: [It can take up to 10 minutes for changes to your site to publish after you push the changes to GitHub](https://docs.github.com/en/pages/setting-up-a-github-pages-site-with-jekyll/creating-a-github-pages-site-with-jekyll#creating-your-site).
-
-[Jekyll]: https://jekyllrb.com
-[Just the Docs]: https://just-the-docs.github.io/just-the-docs/
-[GitHub Pages]: https://docs.github.com/en/pages
-[GitHub Pages / Actions workflow]: https://github.blog/changelog/2022-07-27-github-pages-custom-github-actions-workflows-beta/
-[Bundler]: https://bundler.io
-[use this template]: https://github.com/just-the-docs/just-the-docs-template/generate
-[`jekyll-default-layout`]: https://github.com/benbalter/jekyll-default-layout
-[`jekyll-seo-tag`]: https://jekyll.github.io/jekyll-seo-tag
-[MIT License]: https://en.wikipedia.org/wiki/MIT_License
-[starter workflows]: https://github.com/actions/starter-workflows/blob/main/pages/jekyll.yml
-[actions/starter-workflows]: https://github.com/actions/starter-workflows/blob/main/LICENSE
+Heb je een vraag over PoolParty of deze handleiding? Mail de beheerders via [thesauri@cultureelerfgoed.nl](mailto:thesauri@cultureelerfgoed.nl). Vermeld jouw project en de stap waarbij je vastloopt.
