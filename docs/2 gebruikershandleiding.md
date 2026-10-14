@@ -34,3 +34,5 @@ has_children: true
 
 # Gebruikershandleiding
 
+
+Begin je net? Volg de oefening [Je eerste concept]({% link docs/2 gebruikershandleiding/je-eerste-concept.md %}). Lees eerst [Inloggen]({% link docs/2 gebruikershandleiding/2.1 inloggen.md %}) en [De PoolParty omgeving]({% link docs/2 gebruikershandleiding/2.2 poolparty-omgeving.md %}) als je de applicatie nog niet kent.
